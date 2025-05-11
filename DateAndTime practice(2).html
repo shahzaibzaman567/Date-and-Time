@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date And Time With Youtube</title>
+</head>
+<body>
+    <h1>Date And Time With Youtube</h1>
+    <script>
+//Date
+ 
+let mydate=new Date() 
+console.log(mydate)
+console.log(mydate.toDateString())
+console.log(mydate.toLocaleString())
+console.log(mydate.toLocaleTimeString())
+console.log(mydate.getTimezoneOffset())
+
+
+let myCreatedDate=new Date(2022,1,0)
+console.log(myCreatedDate.toDateString())
+
+let MyCreatedDate=new Date("1-9-2023")
+console.log(MyCreatedDate.toDateString())
+
+
+let MyTimeStamp=Date.now() 
+console.log("MilliSecon With  :"+MyTimeStamp)
+
+console.log("Secon With Map :"+Math.floor(Date.now()/1000/60/60/24/30/12))
+
+
+
+
+let currentdate=new Date() 
+
+console.log("Second :"+Math.floor(currentdate/1000*60*60*24*30*365))
+
+
+let Practice=Date.now()
+console.log(Practice)
+console.log("Formula ka sat  :"+Math.floor(Practice/(1000*60*60*24*365)))
+
+function TotalYear(){
+    let Milli=Date.now()
+    var Year=new Date().getFullYear()
+    console.log(Year)
+    return Year-1970
+}
+console.log("Total Time 1970 sa Lakar 2025 Tak   :"+TotalYear())
+
+
+
+    </script>
+</body>
+</html>
